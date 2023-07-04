@@ -123,10 +123,19 @@ const isUpperCaseAnswer = confirm("Click 'OK' to confirm including uppercase cha
   }
   console.log(password)
   for (let i = 0; i < parseInt(userChoice); i++) {
-    text += cars[i] + "<br>";
+    text += userChoice[i] + "<br>";
   }
 }
 
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword); 
+// generateBtn.addEventListener("click", writePassword); {
+//   const userChoice = +lengthBtn.;
+//   const specialCharacters = +specialCharacters.answer;
+//   const numeric = +numeric.answer;
+//   const lowerCaseLetters = +lowerCaseLetters.answer;
+//   const isUpperCase = +isUpperCase.answer;
+
+//   resultBtn.innerText = writePassword(userChoice, answer, isNumericAnswer, isLowerCaseAnswer, isUpperCaseAnswer);
+// }
